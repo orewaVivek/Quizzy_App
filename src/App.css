@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+.body {
+  background-color: aqua;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 1.6rem;
+
+  color: var(--color-medium);
+  font-size: 1.4rem;
+}
+.loader {
+  width: 50px;
+  height: 24px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 12px;
+  background-repeat: no-repeat;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.progress {
+  display: flex;
+  position: relative;
+  gap: 17rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#progress-bar {
+  width: 480px;
+  margin: 0;
+  position: absolute;
+  top: 190px;
+  height: 20px;
+  
+}
+
+.final-score{
+  /* height:500px; */
+  margin-top: 250px;
+  /* display: flex; */
+  /* position: absolute; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* .timer{
+  position:fixed;
+  left: 100px;
+} */
