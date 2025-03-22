@@ -1,0 +1,62 @@
+.questionaire {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns {
+  width: 450px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(76, 84, 75);
+  color: white;
+  border: none;
+  transition: transform 0.15s ease-in-out;
+}
+.next {
+  display: flex;
+  width: 500px;
+  justify-content: space-between; /* Align children (timer and button) on opposite ends */
+  gap: 20px; /* Space between timer and button */
+  margin-top: 10px; /* Add a little spacing between options and buttons */
+}
+
+.next button {
+  width: 150px; /* Adjust button width */
+}
+.timer {
+  width: 90px; /* Adjust the timer's width if necessary */
+  height: 23px;
+  background-color: rgb(36, 42, 32);
+  padding: 10px;
+  border-radius: 30px;
+  border: .9px solid white;
+}
+
+.btns:hover {
+  background-color: rgb(44, 50, 45);
+  border: 0.7px solid white;
+  color: white;
+  transform: translateX(20px);
+}
+
+.selectedAnswer {
+  transform: translateX(30px);
+  border: 2px solid white;
+  /* border: double; */
+}
+.correct {
+  background-color: rgb(73, 195, 181);
+  color: white;
+}
+.wrong {
+  background-color: rgb(214, 84, 61);
+
+}
+.correct:hover,
+.wrong:hover{
+  transform: none;
+}

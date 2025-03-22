@@ -1,0 +1,10 @@
+button{
+    height: 50px;
+    width: 130px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.welcome{
+    margin-top: 100px;
+}
